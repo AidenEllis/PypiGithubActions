@@ -49,6 +49,8 @@ now you can go on and build your package inside that python folder.
 Inside that python package folder create a file named `version.py` and paste this
 chunk of code in that version.py file
 
+</b>
+
 ```python
 import os
 
@@ -64,6 +66,8 @@ def string():
     return "unknown (git checkout)"
 ```
 
+<b>
+    
 This will help on automatically deceting the package version.
 
 INFO: You can also find this code in this repository `version.py`
@@ -72,6 +76,7 @@ Now in the project root folder (outside your python package folder) create a fil
 name `setup.py` This file is really important because this file contains all the information
 about your package.After creating this paste this code inside it
 
+</b>
 
 ```python
 from setuptools import setup, find_packages
@@ -140,6 +145,8 @@ setup(
 
 ```
 
+<b>
+
 Again, this code is available in this repository (`setup.py`)
 
 Open that file and Fill in the required information:
@@ -171,6 +178,8 @@ where you store that version.py file.
 We are really close to it! in the root folder create a new folder named `.github`
 and inside it create another folder named `workflows` inside it create a new file 
 named pypi.yml (You can name it anything with a .yml extention) inside it paste this code:
+   
+</b>
 
 ```yaml
 name: Upload Python Package
@@ -199,12 +208,14 @@ jobs:
         twine upload dist/*
 ```
 
+***
+
 You can get this code in this repository.
 
 🥳 Congratulations! That's all we need! It's time to go and push it to GitHub
 Now go on and push it to Your GitHub Repository
 
-</b>
+***
 
 ###
 ### ☄️ Uploading our package :
