@@ -1,4 +1,4 @@
-## PypiGithubActions
+# PypiGithubActions
 
 * This is a boilerplate for uploading Python package from GitHub using GitHub's Actions automation.
 * This guide will show you the easiest and secure way to do publish you packages using GitHub
